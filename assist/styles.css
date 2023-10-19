@@ -15,12 +15,12 @@ h3 {
     text-align: center;
 }
 p, li {
-    font-size: 1rem;
+    font-size: calc(1rem + 1vw);
     line-height: 1
 }
 p {
-    font-size: 1rem;
-    line-height: 1;
+    font-size: calc(1rem + 1vw);
+    line-height: 1.5;
 }
 
 .center{
