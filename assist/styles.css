@@ -3,19 +3,20 @@ html {
 }
 
 h1 {
-    font-size: 4rem;
-    text-align: center;
-}
-h2 {
     font-size: 3rem;
     text-align: center;
 }
-h3 {
+h2 {
     font-size: 2.5rem;
     text-align: center;
 }
+h3 {
+    font-size: 2rem;
+    text-align: center;
+}
 p, li {
-    font-size: 1.6rem;
+    font-size: 1rem;
+    line-height: 1
 }
 p {
     font-size: 1rem;
@@ -23,7 +24,7 @@ p {
 }
 
 .center{
-    font-size: 1.6rem;
+    font-size: 1rem;
     line-height: 1;
     text-align: center;
 }
