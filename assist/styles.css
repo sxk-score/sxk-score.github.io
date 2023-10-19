@@ -16,9 +16,12 @@ h3 {
 }
 p, li {
     font-size: 1.6rem;
-    line-height: 2;
-    letter-spacing: 1rem;
 }
+p {
+    font-size: 1rem;
+    line-height: 1;
+}
+
 .center{
     font-size: 1.6rem;
     line-height: 1;
