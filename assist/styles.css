@@ -1,5 +1,7 @@
 html {
     font-size: 1em
+}
+
 h1 {
     font-size: 4rem;
     text-align: center;
@@ -24,10 +26,10 @@ p, li {
 }
 
 body {
-    width: 80rem;
+    width: 80vw;
     margin: 0 auto;
     background-color: white;
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 2vw 2vw 2vw;
 }
 html {
     background-color: skyblue;
