@@ -73,7 +73,7 @@ img {
 }
 
 nav {
-    background-color: #333; /* Choose your color */
+    background-color: skyblue; /* Choose your color */
     padding: 10px;
 }
 
@@ -82,6 +82,6 @@ nav ul li {
     margin-right: 20px; /* Space between links */
 }
 nav a {
-    color: white; /*  Choose your link color */
+    color: black; /*  Choose your link color */
     text-decoration: none; /* Remove default underline */
 }
