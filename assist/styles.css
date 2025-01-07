@@ -30,15 +30,15 @@ p {
 }
 @media screen and (min-width: 769px) { 
 h1 {
-    font-size: calc(2em + 5vw);
+    font-size: calc(2em + 2vw);
     text-align: center;
 }
 h2 {
-    font-size: calc(1.5em + 3vw);
+    font-size: calc(1.5em + 1.5vw);
     text-align: center;
 }
 h3 {
-    font-size: calc(1.25em + 2vw);
+    font-size: calc(1.25em + 1.25vw);
     text-align: center;
 }
 p, li {
@@ -66,6 +66,8 @@ html {
     background-color: skyblue;
 }
 img {
-    display: block;
-    margin: 0 auto;
+  display: block; 
+  max-width: 80%;
+  height: auto;
+  margin: 20px auto;
 }
