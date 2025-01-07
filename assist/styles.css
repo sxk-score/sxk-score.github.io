@@ -76,11 +76,9 @@ img {
 nav {
     background-color: skyblue;
     color: white;
-    position: fixed; /* Make it stay in place */
     top: 0;
     left: 0;
     width: 100%; /* Adjust as needed */
-    z-index: 10;
 }
 
 nav ul {
