@@ -97,9 +97,3 @@ nav a {
     text-decoration: none;
 }
 
-main {
-    margin-top: 60px; /* Adjust top margin for separation */
-    padding: 2rem;
-    position: relative;
-    z-index: 9; 
-}
