@@ -3,23 +3,23 @@ html {
 }
 @media screen and (max-width: 768px) {
 h1 {
-    font-size: calc(1.2em + 3vw);
+    font-size: calc(2em + 1vw);
     text-align: center;
 }
 h2 {
-    font-size: calc(1em + 2vw);
+    font-size: calc(1.5em + 1.5vw);
     text-align: center;
 }
 h3 {
-    font-size: calc(0.8em + 1vw);
+    font-size: calc(1.25em + 1.25vw);
     text-align: center;
 }
 p, li {
-    font-size: calc(0.7em + 1vw);
+    font-size: calc(1em + 1vw);
     line-height: 1
 }
 p {
-    font-size: calc(0.7em + 1vw);
+    font-size: calc(1em + 1vw);
     line-height: 1.5;
 }
 .center{
@@ -30,7 +30,7 @@ p {
 }
 @media screen and (min-width: 769px) { 
 h1 {
-    font-size: calc(2em + 2vw);
+    font-size: calc(2em + 1vw);
     text-align: center;
 }
 h2 {
@@ -67,7 +67,7 @@ html {
 }
 img {
   display: block; 
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
   margin: 20px auto;
 }
