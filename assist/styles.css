@@ -75,10 +75,9 @@ img {
 
 nav {
     background-color: skyblue;
-    color: white;
-    top: 0;
-    left: 0;
-    width: 100%; /* Adjust as needed */
+    padding: 10px;
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly */
 }
 
 nav ul {
