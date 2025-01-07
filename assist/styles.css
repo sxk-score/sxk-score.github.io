@@ -1,34 +1,61 @@
 html {
     font-size: 1em
 }
-
+@media screen and (max-width: 768px) {
 h1 {
-    font-size: calc(1.5rem + 3vw);
+    font-size: calc(1.2em + 3vw);
     text-align: center;
 }
 h2 {
-    font-size: calc(1.25rem + 2vw);
+    font-size: calc(1em + 2vw);
     text-align: center;
 }
 h3 {
-    font-size: calc(1rem + 1vw);
+    font-size: calc(0.8em + 1vw);
     text-align: center;
 }
 p, li {
-    font-size: calc(1rem + 1vw);
+    font-size: calc(0.7em + 1vw);
     line-height: 1
 }
 p {
-    font-size: calc(1rem + 1vw);
+    font-size: calc(0.7em + 1vw);
+    line-height: 1.5;
+}
+.center{
+    font-size: 1em;
+    line-height: 1;
+    text-align: center;
+}
+}
+@media screen and (min-width: 769px) { 
+h1 {
+    font-size: calc(2em + 5vw);
+    text-align: center;
+}
+h2 {
+    font-size: calc(1.5em + 3vw);
+    text-align: center;
+}
+h3 {
+    font-size: calc(1.25em + 2vw);
+    text-align: center;
+}
+p, li {
+    font-size: calc(1em + 1vw);
+    line-height: 1
+}
+p {
+    font-size: calc(1em + 1vw);
     line-height: 1.5;
 }
 
 .center{
-    font-size: 1rem;
+    font-size: 1em;
     line-height: 1;
     text-align: center;
 }
-
+}
 body {
     width: 80vw;
     margin: 0 auto;
