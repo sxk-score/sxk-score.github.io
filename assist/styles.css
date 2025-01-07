@@ -1,7 +1,7 @@
 html {
     font-size: 1em
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 h1 {
     font-size: calc(2em + 1vw);
     text-align: center;
@@ -27,8 +27,17 @@ p {
     line-height: 1;
     text-align: center;
 }
+    nav ul {
+        display: block;
+    }
+
+    nav li {
+        display: block;
+        float: none;
+        margin: 10px 0; 
+    }
 }
-@media screen and (min-width: 769px) { 
+@media (min-width: 769px) { 
 h1 {
     font-size: calc(2em + 1vw);
     text-align: center;
@@ -56,15 +65,11 @@ p {
     text-align: center;
 }
 }
-body {
-    width: 80vw;
-    margin: 0 auto;
-    background-color: white;
-    padding: 0 2vw 2vw 2vw;
-}
+
 html {
     background-color: white;
 }
+
 img {
   display: block; 
   max-width: 100%;
@@ -72,16 +77,34 @@ img {
   margin: 20px auto;
 }
 
-nav {
-    background-color: skyblue; /* Choose your color */
-    padding: 10px;
+body {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0;
 }
 
-nav ul li {
-    display: inline-block;
-    margin-right: 20px; /* Space between links */
+nav {
+    background-color: skyblue;
+    color: white;
+    position: fixed; /* Make it stay in place */
+    top: 0;
+    left: 0;
+    width: 100%; /* Adjust as needed */
 }
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    float: left;
+    margin-left: 20px; /* Adjust spacing */
+}
+
 nav a {
-    color: black; /*  Choose your link color */
-    text-decoration: none; /* Remove default underline */
+    color: black;
+    text-decoration: none;
 }
