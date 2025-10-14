@@ -1,0 +1,153 @@
+:root {
+    --mscz-current-color: #f005;
+    --mscz-measure-color: #f003;
+    --mscz-page-padding: 1.4em;
+    --mscz-page-border-width: 2px;
+}
+
+.mscz-error {
+    color: #f00;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2em;
+    min-height: 1.2em;
+    padding: 0.5em 0;
+}
+
+[mscz-disabled]::before {
+    width: 100%;
+    height: 100%;
+    content: " ";
+    position: absolute;
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #fff;
+}
+
+[mscz-disabled] {
+    user-select: none;
+}
+
+.mscz-player-controls {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: .8em;
+    padding: .5em 1em;
+    background-color: #eee;
+    z-index: 1;
+}
+
+.mscz-player-controls-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: .4em;
+}
+
+.mscz-button {
+    border: solid 1px #555;
+    border-radius: .3em;
+    color: #000;
+    margin: .5em 0;
+    padding: 0 .3em;
+    cursor: pointer;
+    background: #fff0;
+    transition: .3s ease
+}
+
+.mscz-button:hover {
+    background: #ccc;
+}
+
+.mscz-button:active {
+    background: #aaa;
+}
+
+.mscz-play-button,
+.mscz-pause-button,
+.mscz-back-button {
+    width: 2.1em;
+    height: 2.1em;
+}
+
+.mscz-play-button::before {
+    content: "▶";
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+.mscz-pause-button::before {
+    content: "❚❚";
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+.mscz-back-button::before {
+    content: "⏮";
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+.mscz-player-controls-seek {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.mscz-player-controls-seek>input[type="range"] {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+}
+
+.mscz-player-controls-seek>input[type="range"]::-webkit-slider-thumb {
+    cursor: pointer;
+}
+
+.mscz-images-container {
+    padding-bottom: var(--mscz-page-padding);
+}
+
+.mscz-image-box {
+    border: var(--mscz-page-border-width) solid #aaa;
+    position: relative;
+    width: calc(100% - var(--mscz-page-padding) * 2);
+    display: block;
+    border: var(--mscz-page-border-width) solid #aaa;
+    margin: 0 calc(var(--mscz-page-padding) - var(--mscz-page-border-width));
+}
+
+.mscz-svg-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.mscz-image-container {
+    padding: calc(var(--mscz-page-padding) - var(--mscz-page-border-width)) 0 0 0;
+}
+
+.mscz-measure-overlay:hover {
+    background-color: var(--mscz-measure-color);
+    cursor: pointer;
+}
+
+.mscz-measure-overlay {
+    position: absolute;
+}
+
+.mscz-measure-overlay-current {
+    background-color: var(--mscz-current-color) !important;
+}
