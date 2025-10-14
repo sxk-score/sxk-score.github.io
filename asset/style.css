@@ -208,6 +208,8 @@
             display: flex;
             flex-direction: column;
             height: 100%;
+            max-height: 1200px;
+            overflow: scroll;
             padding: 2rem;
         }
         
@@ -236,8 +238,10 @@
 
         /* 卡片图片样式 */
         .card-img {
+            flex: 1;
+            overflow-y: auto;
             height: 100%;
-            overflow: hidden;
+            overflow: scroll;
             position: relative;
         }
         
@@ -262,6 +266,9 @@
             .card-title {
                 font-size: 1.6rem;
             }
+            .card-main {
+                max-height: 800px;
+            }
         }
         
         @media (max-width: 768px) {
@@ -284,6 +291,9 @@
             .card-main .card-content {
                 padding: 1.8rem;
             }
+            .card-main {
+                max-height: 600px;
+            }
         }
         
         @media (max-width: 480px) {
@@ -299,6 +309,21 @@
                 font-size: 1.4rem;
             }
         }
+        @media (max-height: 1080px) {
+            .card-main {
+                max-height: 800px;
+            }
+        } 
+        @media (max-height: 800px) {
+            .card-main {
+                max-height: 600px;
+            }
+        } 
+        @media (max-height: 640px) {
+            .card-main {
+                max-height: 480px;
+            }
+        } 
         /* 响应式图片 */
         .responsive-image {
             width: 100%;
